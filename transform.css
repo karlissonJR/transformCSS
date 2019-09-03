@@ -129,13 +129,3 @@ body {
         box-shadow: 0px 0px 20px 16px yellow;
     }
 }
-
-.ring {
-    background: blue;
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    top: 300px;
-    left: 250px;
-    z-index: 1;
-}
