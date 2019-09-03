@@ -1,3 +1,7 @@
+body {
+    background-color: hsl(240, 100%, 30%);
+}
+
 .ball {
     width: 100px;
     height: 100px;
@@ -113,6 +117,7 @@
     animation-iteration-count: infinite;
     transform-origin:0% 0%;
     animation-timing-function: linear;
+    z-index: 2;
 }
 
 @keyframes shining {
@@ -123,4 +128,14 @@
     75% {
         box-shadow: 0px 0px 20px 16px yellow;
     }
+}
+
+.ring {
+    background: blue;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    z-index: 1;
 }
