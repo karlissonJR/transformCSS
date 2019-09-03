@@ -1,0 +1,126 @@
+.ball {
+    width: 100px;
+    height: 100px;
+}
+
+.ball1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: linear-gradient(90deg, red, orange, red);
+    border-radius: 50%;
+}
+
+.ball1:hover {
+    transform: rotate(45deg);
+    transform: skewX(24deg);
+}
+
+.ball2 {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    background: linear-gradient(90deg, red, orange, red);
+    border-radius: 50%;
+}
+
+.ball2:hover {
+    transform: scale(1.5);
+}
+
+.ball3 {
+    position: absolute;
+    top: 150px;
+    left: 950px;
+    background: linear-gradient(0deg, red, orange, red);
+    border-radius: 50%;
+    animation-duration: 1500ms;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    10% {
+        background: linear-gradient(36deg, red, orange, red);
+    }
+
+    20% {
+        background: linear-gradient(72deg, red, orange, red);
+    }
+
+    30% {
+        background: linear-gradient(108deg, red, orange, red);
+    }
+
+    40% {
+        background: linear-gradient(144deg, red, orange, red);
+    }
+
+    50% {
+        background: linear-gradient(180deg, red, orange, red);
+    }
+
+    60% {
+        background: linear-gradient(216deg, red, orange, red);
+    }
+
+    70% {
+        background: linear-gradient(252deg, red, orange, red);
+    }
+
+    80% {
+        background: linear-gradient(288deg, red, orange, red);
+    }
+
+    90% {
+        background: linear-gradient(324deg, red, orange, red);
+    }
+
+    100% {
+        background: linear-gradient(360deg, red, orange, red);
+    }
+}
+
+.ball3:hover {
+    animation-duration: 1s;
+    animation-name: growing;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes growing {
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+.sun {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    background: orangered;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 8px yellow;
+    animation-duration: 1500ms;
+    animation-name: shining;
+    animation-iteration-count: infinite;
+    transform-origin:0% 0%;
+    animation-timing-function: linear;
+}
+
+@keyframes shining {
+    25% {
+        box-shadow: 0px 0px 20px 12px yellow;
+    }
+
+    75% {
+        box-shadow: 0px 0px 20px 16px yellow;
+    }
+}
